@@ -1,6 +1,15 @@
-body{
-    background-color: #DC86B3;
-}
 main {
-    background-color: #DC86B3;
+    background-color: #fff1f9;
+}
+.navbar sticky-top bg-body-tertiary {
+    background-image: url('img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+
+
+footer{
+    background-color: #ffdff1;
 }
