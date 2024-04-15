@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
     <title>Nart</title>
 
 </head>
@@ -13,129 +17,174 @@
 
     <!-- Header -->
     <header>
-            <!-- Nav -->
-                <div>
-                  <nav class="navbar sticky-top bg-body-tertiary">
-                    <div class="container-fluid">
-                      <div>
-                        <img src="img/Logo natdesign.png" class="img-logo" alt="Logo" height="50px" >
-                      </div>
-                        <a class="navbar-brand" href="#">Nart</a>
-                        <ul class="nav nav-underline">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+        <!-- Nav -->
+        <div>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/nartlogo.png" class="img-logo" alt="Logo" height="80px">
+                        </a>
+                    </div>
+                    <a class="navbar-brand" href="index.html">Nart</a>
+                    <ul class="nav nav-underline d-none d-lg-flex">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <!-- Dropdown for small screens -->
+                    <div class="dropdown d-lg-none">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                                </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                </nav>
                 </div>
-            <!-- Banner -->     
-            <div class="card text-bg-dark">
-              <img src="img/banneer.png" class="img-fluid" alt="pink-banner">
-              
-            <!-- Welcome! -->   
-              <div class="card-img-overlay">
-                <div class="card mb-3" style="max-width: 90%">
-                  <div class="welcome-card">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                  <img src="img/natalia.jpg" class="img-fluid rounded-circle" alt="Natalia Reyes" style="height: 50%;">
-                              </div>
-                              <div class="col-md-8">
-                                  <div class="card-body">
-                                    <h1 class="card-title">WELCOME!</h1>
-                                    <p class="card-text">I am Natalia Reyes, a freelance graphic designer, photographer, and web developer based in Ottawa, Canada. 
-                                        My main focus is on illustration work, branding, UX/UI, and web creation.</p>
-                                    <button class="btn btn-primary" type="button">Read more</button>
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                  </div>
-              </div>
-            </div>
+            </nav>
+        </div>
     </header>
 
+    <!-- Banner -->
+    <div class="card-banner"> 
+        <div class="card text-bg-dark">
+            <img src="img/banneer.png" class="img-fluid banner-card" alt="pink-banner">
+
+            <!-- Welcome! -->
+            <div class="card-img-overlay">
+                <div class="container">
+                    <div class="card mb-5 mt-5 rounded-5" role="banner">
+                        <div class="welcome-card row g-0">
+                            <div class="col-md-4 col-12">
+                                <img src="img/natalia.jpg" class="img-fluid rounded-circle" alt="Natalia Reyes">
+                            </div>
+
+                            <div class="col-md-8 col-12">
+                                <div class="card-body">
+                                    <h1>WELCOME!</h1>
+                                    <p class="card-text">I am Natalia Reyes, a freelance graphic designer, photographer, and web developer based in Ottawa, Canada. 
+                                        My main focus is on illustration work, branding, UX/UI, and web creation.</p>
+                                    <a href="about.html" class="btn btn-info rounded-pill" type="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main -->
-    <main>
+    <main class="container">
 
         <!-- Carousel 1 -->
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/branding.png" class="d-block w-100" alt="Branding">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source srcset="img/cora1440_x_960.jpg" media="(min-width: 960px)">
+                        <source srcset="img/cora960_x_639.jpg" media="(max-width: 959px)">
+                        <img src="img/cora1440_x_960.jpg" class="d-block w-100" alt="Graphic Design">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="img/makeup1440_x_864.jpg" media="(min-width: 960px)">
+                        <source srcset="img/makeup960_x_575.jpg" media="(max-width: 959px)">
+                        <img src="img/makeup1440_x_864.jpg" class="d-block w-100" alt="Make Up Branding">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="img/webux1440_x_690.jpg" media="(min-width: 960px)">
+                        <source srcset="img/webux960_x_460.jpg" media="(max-width: 959px)">
+                        <img src="img/webux1440_x_690.jpg" class="d-block w-100" alt="UX/UI">
+                    </picture>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/business-people.png" class="d-block w-100" alt="Business People">
-            </div>
-            <div class="carousel-item">
-              <img src="img/businessman-handshaking.png" class="d-block w-100" alt="Businessman Handshaking">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         
         <!-- Let's talk-->
-            <div class="lets">
-                <p class="helping">Helping businesses grow by crafting incredible web experiences. If you are looking for a designer and developer.</p>
-                <h5>Let's talk!</h5>
-            </div>
-
-        <!-- My work card --> 
-        <div class="wrapper">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h3 class="design">Design</h3>
-              <p class="card-text">Boost your brand with stunning images and captivating designs. From logos to marketing materials, our graphic design services bring your vision to life and leave a lasting impression.</p>
-              <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h3 class="web">Web</h3>
-              <p class="card-text">Turn your ideas into fully functional and easy-to-use websites. I develop customized solutions tailored to your needs, ensuring trouble-free navigation and optimal performance on all devices.</p>
-              <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h3 class="mywork">My Work</h3>
-              <img src="img/sing.png" class="card-img-top" alt="chameleon-singing">
-              <a href="#" class="btn btn-primary">Read more</a>
-            </div>
-          </div>
+        <div class="lets mt-4 mb-4">
+            <p class="helping">Helping businesses grow by crafting incredible web experiences. If you are looking for a designer and developer.</p>
+            <h5>Let's talk!</h5>
         </div>
 
+        <!-- My work card -->
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card rounded-5 h-100">
+                        <div class="card-body">
+                            <h3 class="design mt-4 mb-4">Design</h3>
+                            <p class="card-text">Boost your brand with stunning images and captivating designs. From logos to marketing materials, our graphic design services bring your vision to life and leave a lasting impression.</p>
+                            <a href="#" class="btn btn-info rounded-pill mt-4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card rounded-5 h-100">
+                        <div class="card-body">
+                            <h3 class="web mt-4 mb-4">Web</h3>
+                            <p class="card-text">Turn your ideas into fully functional and easy-to-use websites. I develop customized solutions tailored to your needs, ensuring trouble-free navigation and optimal performance on all devices.</p>
+                            <a href="#" class="btn btn-info rounded-pill mt-4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card rounded-5 h-100">
+                        <div class="card-body">
+                            <h3 class="my-work mt-4 mb-4">My Work</h3>
+                            <img src="img/sing-work.png" class="card-img-top rounded-0" alt="chameleon-singing">
+                            <a href="#" class="btn btn-info rounded-pill mt-4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Contact Form--> 
-        <h1>Let's work together!</h1>
-        <p>Feel free to request a quote or a question, it is a good opportunity to talk!</p>
-        <div class="form">
-          <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="johndoe@gmail.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="btn-submit">
-            <button class="btn btn-primary" type="submit">Submit</button>
-          </div>
+        <!-- Contact Form-->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-6 mt-4" id="contact">
+                    <h1>Let's work together!</h1>
+                    <p class="mt-4">Feel free to request a quote or ask a question, it's a good opportunity to talk!</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="johndoe@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-warning rounded-pill" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -145,11 +194,43 @@
 
     <!-- Footer -->
     <footer>
-      <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="index.html">Home</a>
-      <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="about.html">About</a>
-      <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="services.html">Services</a>
-      <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="index.html">Contact</a>
-      <p >&copy; Copyright Nart, 2024</p>
+        <div class="grid-container">
+            <div class="links">
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover mt-3" href="index.html">Home</a>
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="about.html">About</a>
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="services.html">Services</a>
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#contact">Contact</a>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/phottonat_" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#f88536" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M8,3c-2.757,0 -5,2.243 -5,5v8c0,2.757 2.243,5 5,5h8c2.757,0 5,-2.243 5,-5v-8c0,-2.757 -2.243,-5 -5,-5zM8,5h8c1.654,0 3,1.346 3,3v8c0,1.654 -1.346,3 -3,3h-8c-1.654,0 -3,-1.346 -3,-3v-8c0,-1.654 1.346,-3 3,-3zM17,6c-0.55228,0 -1,0.44772 -1,1c0,0.55228 0.44772,1 1,1c0.55228,0 1,-0.44772 1,-1c0,-0.55228 -0.44772,-1 -1,-1zM12,7c-2.757,0 -5,2.243 -5,5c0,2.757 2.243,5 5,5c2.757,0 5,-2.243 5,-5c0,-2.757 -2.243,-5 -5,-5zM12,9c1.654,0 3,1.346 3,3c0,1.654 -1.346,3 -3,3c-1.654,0 -3,-1.346 -3,-3c0,-1.654 1.346,-3 3,-3z"></path></g></g>
+                    </svg>
+                </a>
+
+                <a href="https://www.behance.net/phottonat" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#f88536" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M9,4c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM12,18h6.73047c0.73,0 4.67969,-0.04969 4.67969,3.57031c0,1.92 -1.31039,2.56938 -1.90039,2.85938c0.88,0.28 2.49023,1.09031 2.49023,3.57031c0,3.83 -4.39047,4 -4.98047,4h-7.01953zM29,18h7v2h-7zM15,20.42969v3.28125h3.2207c0.44,0 1.89844,-0.24094 1.89844,-1.71094c0,-1.47 -1.89945,-1.57031 -2.18945,-1.57031zM32.73047,21c3.9,0 4.95914,3.03977 5.11914,3.75977c0.15,0.73 0.15039,1.37023 0.15039,2.24023h-7.90039c0,0.87 0.46102,2.83008 2.79102,2.83008c0.62,0 1.07883,-0.14945 1.54883,-0.43945c0.46,-0.29 0.62148,-0.57133 0.77148,-0.86133h2.62891c-0.46,1.15 -1.07977,2.02156 -2.00977,2.60156c-0.93,0.58 -2.01,0.86914 -3.25,0.86914c-0.78,0 -1.55008,-0.14945 -2.33008,-0.43945c-0.62,-0.29 -1.23922,-0.72039 -1.69922,-1.15039c-0.46,-0.44 -0.77008,-1.02023 -1.08008,-1.74023c-0.31,-0.58 -0.4707,-1.44992 -0.4707,-2.16992c0,-0.72 0.29047,-5.5 5.73047,-5.5zM32.73047,23.0293c-2.26,0 -2.63086,2.17055 -2.63086,2.31055h4.96094c-0.16,-0.72 -0.81008,-2.31055 -2.33008,-2.31055zM15,25.71094v3.85937h3.35156c0.289,0 2.32813,-0.08938 2.32813,-1.85937c0,-1.76 -1.60213,-2 -2.32813,-2z"></path></g></g>
+                        </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/natalia-reyes-villamil/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#f88536" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path></g></g>
+                    </svg>
+                </a>
+                
+                <a href="https://github.com/natareyes2" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#f88536" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.64545,0 -23,10.35455 -23,23c0,12.64545 10.35455,23 23,23c12.64545,0 23,-10.35455 23,-23c0,-12.64545 -10.35455,-23 -23,-23zM25,4c11.55454,0 21,9.44546 21,21c0,0.09372 -0.00657,0.18586 -0.00781,0.2793c-0.63654,-0.06572 -1.37274,-0.12735 -2.30859,-0.16602c-1.33433,-0.05513 -3.01571,-0.04281 -4.91602,0.05664c0.07474,-0.50462 0.12559,-1.01694 0.12695,-1.54297c0.09683,-1.87262 -0.53201,-3.62449 -1.55469,-5.17187c0.24707,-0.85373 0.5369,-1.93986 0.60938,-3.17187c0.0826,-1.40428 -0.03862,-2.96144 -1.16602,-4.01367l-0.28906,-0.26953h-0.39453c-2.68307,0 -4.51959,1.12321 -5.64258,2.01367c-1.6215,-0.62765 -3.44481,-1.01367 -5.45703,-1.01367c-2.02363,0 -3.86447,0.39142 -5.55273,1.01758c-1.12235,-0.89089 -2.96048,-2.01758 -5.64648,-2.01758h-0.39258l-0.28906,0.26758c-1.09819,1.01974 -1.19936,2.53418 -1.13086,3.93164c0.06041,1.23229 0.33345,2.35292 0.57617,3.24805c-1.03996,1.57759 -1.66406,3.37475 -1.66406,5.15234c0,0.50146 0.04641,0.99049 0.11328,1.47266c-3.12421,-0.10128 -5.49492,-0.01896 -7.00977,0.11914c-0.00058,-0.06408 -0.00391,-0.12719 -0.00391,-0.19141c0,-11.55454 9.44546,-21 21,-21zM14.39648,13.13086c2.01758,0.19118 3.53551,1.09211 4.23828,1.7168l0.46875,0.41406l0.57813,-0.23633c1.58145,-0.65119 3.34534,-1.02539 5.31836,-1.02539c1.97302,0 3.73739,0.37608 5.19922,1.01563l0.58594,0.25781l0.47852,-0.42578c0.70301,-0.6249 2.22351,-1.5261 4.24219,-1.7168c0.2684,0.44498 0.50163,1.07781 0.44531,2.03516c-0.0674,1.14572 -0.37387,2.39364 -0.60547,3.13477l-0.15039,0.48242l0.29883,0.4082c0.98947,1.34928 1.49398,2.80953 1.4082,4.35352l-0.00195,0.02734v0.02734c0,2.49545 -0.89861,4.49273 -2.8125,5.97266c-1.91384,1.47993 -4.93523,2.42773 -9.1875,2.42773c-4.25227,0 -7.27556,-0.94781 -9.18945,-2.42773c-1.91389,-1.47993 -2.81055,-3.4772 -2.81055,-5.97266c0,-1.46471 0.52892,-3.07601 1.50586,-4.4082l0.29297,-0.39844l-0.14062,-0.47461c-0.23173,-0.78787 -0.51577,-2.06426 -0.57227,-3.2168c-0.04699,-0.95862 0.17989,-1.56453 0.41016,-1.9707zM8.88672,26.01953c0.7042,0.0045 1.51102,0.03241 2.31641,0.06055c0.07838,0.31957 0.17145,0.63279 0.28125,0.93945c-3.31343,0.07201 -5.77998,0.41492 -7.30078,0.70898c-0.06645,-0.50662 -0.11716,-1.01813 -0.14648,-1.53516c1.11744,-0.10349 2.71311,-0.18749 4.84961,-0.17383zM41.11328,26.07617c2.12956,-0.02477 3.72152,0.08796 4.84375,0.20703c-0.02936,0.48114 -0.07711,0.95761 -0.13867,1.42969c-1.57279,-0.29937 -4.10115,-0.64156 -7.50391,-0.69727c0.0974,-0.27328 0.17748,-0.55432 0.25,-0.83789c0.89822,-0.0512 1.77391,-0.09255 2.54883,-0.10156zM37.89258,28.00781c3.57307,0.03197 6.19274,0.38911 7.77344,0.69141c-1.34068,7.46807 -6.65766,13.59353 -13.66602,16.08984v-5.18945c0,-1.58457 -0.52036,-3.3319 -1.42578,-4.78906c-0.2749,-0.44241 -0.59827,-0.86081 -0.95898,-1.23633c2.31522,-0.45738 4.21713,-1.2754 5.69727,-2.41992c1.13046,-0.87413 1.98451,-1.94544 2.58008,-3.14648zM11.9082,28.01367c0.59685,1.19835 1.45134,2.26782 2.58008,3.14063c1.54054,1.19123 3.54334,2.02354 5.98828,2.46875c-0.31986,0.32865 -0.61078,0.68955 -0.86914,1.07031l-0.06055,-0.05273c0.0055,-0.0063 -0.49713,0.24525 -1.24805,0.3125c-0.75092,0.06725 -1.67721,0.04688 -2.49805,0.04688c-1.225,0 -1.76457,-0.57879 -2.62695,-1.63281c-0.47755,-0.64363 -1.05973,-1.16486 -1.625,-1.56055c-0.57881,-0.40517 -1.07257,-0.69113 -1.68359,-0.79297l-0.08203,-0.01367h-0.08398c-0.46667,0 -0.91824,0.03379 -1.33984,0.51563c-0.2108,0.24092 -0.3561,0.68694 -0.26172,1.06445c0.09438,0.37752 0.3332,0.6095 0.54688,0.75195c1.36672,0.91115 1.60826,2.71448 2.46484,4.31836c0.79992,1.59392 2.52629,2.34961 4.29102,2.34961h2.59961v4.78906c-7.00283,-2.49435 -12.31621,-8.61221 -13.66211,-16.07227c1.52564,-0.29739 4.07694,-0.65295 7.57031,-0.70312zM23.69922,34.09961h2.80078c0.81282,0 1.68042,0.64779 2.375,1.76563c0.69458,1.11783 1.125,2.61894 1.125,3.73438v5.79102c-1.60395,0.39525 -3.27809,0.60938 -5,0.60938c-1.72191,0 -3.39605,-0.21412 -5,-0.60937v-5.79102c0,-1.09074 0.46783,-2.5883 1.20898,-3.71094c0.74116,-1.12264 1.67741,-1.78906 2.49023,-1.78906zM12.30859,35.28125c0.86577,0.89801 1.91393,1.71875 3.49219,1.71875c0.77917,0 1.7517,0.02807 2.67578,-0.05469c0.00329,-0.00029 0.00648,-0.00166 0.00977,-0.00195c-0.12175,0.35 -0.21258,0.70217 -0.28906,1.05664h-2.79687c-1.23333,0 -2.10462,-0.44557 -2.50586,-1.24805l-0.00781,-0.01367l-0.00586,-0.01172c-0.1644,-0.30537 -0.38021,-0.91597 -0.57226,-1.44531z"></path></g></g>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+        <p>Follow me to see my work more closely!</p>
+        <p>&copy; 2024 Nart | Designed by Nart</p>
     </footer>
 
 </body>
