@@ -8,7 +8,7 @@
 
 /*BODY*/
 body{
-    background-color: #ffdff1;
+    background-color: #fff1f9;
     font-family: "Poppins", sans-serif;
 }
 
@@ -31,7 +31,6 @@ h5{
 
 /*MAIN*/
 main {
-    background-color: #fff1f9;
     padding-right: 80px;
     padding-left: 80px;
     padding-top: 20px;
@@ -80,6 +79,7 @@ main {
     z-index: 3;
     margin-bottom: 342px;
 }
+
 /* desktop card banner */
 @media screen and (min-width: 992px) {
     .card-banner{
@@ -110,26 +110,26 @@ main {
 }
 
 .btn-secondary{
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
     color: black;
 }
 
 .btn-secondary:hover{
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
 }
 
 .dropdown-menu .dropdown-menu-dark{
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
     color: black;
 }
 
 
 /*Card of Natalia in the middle of the background*/
 .img-fluid.rounded-circle{
-    height: 50%;
+    height: 80%;
 }
 
 .card-img-overlay {
@@ -157,8 +157,6 @@ main {
     }
 }
 
-  
-
 
 /*CONTACT*/
 /*Let's talk*/
@@ -168,14 +166,14 @@ main {
 
 /*Warning color*/
 .btn-warning{
-    background-color: var(--warning);
-    border-color: var(--warning);
+    background-color: var(--warning) !important;
+    border-color: var(--warning) !important;
 }
 
 /*Info color*/
 .btn-info{
-    background-color: var(--info);
-    border-color: var(--info);
+    background-color: var(--info) !important;
+    border-color: var(--info) !important;
 }
 
 /*///////////////////////////////////////////ABOUT/////////////////////////////////////////*/
